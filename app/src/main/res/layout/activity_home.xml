@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/welcome_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome_bg" />
+
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:background="#1A1A1A"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="234dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center|start"
+            android:fontFamily="@font/adlam_display"
+            android:text="Readify"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="49dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/baseline_search_24"
+            app:tint="#FFFFFF" />
+
+        <ImageButton
+            android:id="@+id/person_button"
+            android:layout_width="50dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/baseline_person_24"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:id="@+id/main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/home_parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Featured Books Section -->
+            <TextView
+                android:id="@+id/featured_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Books"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="#FFFFFF"
+                android:clickable="true"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <LinearLayout
+                    android:id="@+id/featured_books_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Sample Book Item -->
+                    <ImageView
+                        android:id="@+id/book_image_1"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/login_girl"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageView
+                        android:id="@+id/book_image_2"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/login_girl"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageView
+                        android:id="@+id/book_image_3"
+                        android:layout_width="120dp"
+                        android:layout_height="160dp"
+                        android:src="@drawable/login_girl"
+                        android:layout_marginEnd="8dp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Library Section -->
+            <TextView
+                android:id="@+id/library_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Library"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Sample Library Item -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="#1A1A1A"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/library_book_image"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/cartoon"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:id="@+id/library_book_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Book Title"
+                        android:fontFamily="@font/adlam_display"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/open_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open"
+                        android:backgroundTint="#FF0000"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <!-- Recent Files Section -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"/>
+
+                <!-- Bookmark Button -->
+                <Button
+                    android:id="@+id/bookmark_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:fontFamily="@font/adlam_display"
+                    android:backgroundTint="#FF0000"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <!-- Night Mode Toggle -->
+                <Switch
+                    android:id="@+id/switch_dim_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eye Protect Mode"
+                    android:fontFamily="@font/adlam_display"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Font Size Adjuster -->
+
+                <!-- Table of Contents -->
+
+                <!-- Notes Section -->
+                <!-- Notes Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <Button
+                        android:id="@+id/add_catagory_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Catagory"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/adlam_display"
+                        android:backgroundTint="#FF0000"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="8dp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+                <!-- Progress Bar -->
+
+                <!-- Button Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/store_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Store"
+                        android:fontFamily="@font/adlam_display"
+                        android:backgroundTint="#FF0000"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <Button
+                        android:id="@+id/favorite_books_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FF0000"
+                        android:fontFamily="@font/adlam_display"
+                        android:text="Favourites"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:id="@+id/dim_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dim_gradient"
+        android:visibility="gone"
+        android:clickable="false" />
+</RelativeLayout>

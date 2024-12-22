@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavouriteActivity"
+    android:background="#000000">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#1A1A1A">
+
+        <TextView
+            android:id="@+id/favorites_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/adlam_display"
+            android:gravity="center|start"
+            android:text="Favorites"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Favorite Books -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorites_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/adlam_display"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp" />
+
+    <View
+        android:id="@+id/dim_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dim_gradient"
+        android:visibility="gone"
+        android:clickable="false" />
+
+</RelativeLayout>

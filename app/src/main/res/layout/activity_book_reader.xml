@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Book 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Book Image -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/gatsby_cover"
+                android:contentDescription="Book 1 Image"
+                android:layout_marginEnd="16dp" />
+
+            <!-- Title and Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Book Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Great Gatsby"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <!-- Read Button -->
+                <Button
+                    android:id="@+id/readButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Repeat for Book 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pride_prejudice_cover"
+                android:contentDescription="Book 2 Image"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pride and Prejudice"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <Button
+                    android:id="@+id/readButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Repeat for Book 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/mockingbird_cover"
+                android:contentDescription="Book 3 Image"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Kill a Mockingbird"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <Button
+                    android:id="@+id/readButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Repeat for Book 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/nineteen_eighty_four_cover"
+                android:contentDescription="Book 4 Image"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1984"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <Button
+                    android:id="@+id/readButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Repeat for Book 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dragon_tattoo_cover"
+                android:contentDescription="Book 5 Image"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Girl with the Dragon Tattoo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <Button
+                    android:id="@+id/readButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

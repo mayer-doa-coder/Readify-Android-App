@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="0dp"
+    android:layout_marginTop="25dp"
+    android:id="@+id/main"
+    android:padding="8dp"
+    android:background="#1A1A1A">
+
+    <!-- Book Cover -->
+
+    <!-- Book Title -->
+    <ImageView
+        android:id="@+id/book_cover"
+        android:clickable="true"
+        android:layout_width="144dp"
+        android:layout_height="179dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Title"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <!-- Book Description -->
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="12sp"
+        android:textColor="#AAAAAA"
+        android:maxLines="2" />
+
+    <!-- Star Rating -->
+    <RatingBar
+        android:id="@+id/book_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-27dp"
+        android:layout_marginTop="4dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:scaleX="0.8"
+        android:scaleY="0.8" />
+
+    <View
+        android:id="@+id/dim_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dim_gradient"
+        android:visibility="gone"
+        android:clickable="false" />
+
+</LinearLayout>
